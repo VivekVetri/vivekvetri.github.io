@@ -171,7 +171,7 @@ d3.csv("furniture.csv", type, function(error, data) {
         var depl=parseFloat(d['Quantity']);
         var dep0=parseFloat(d0['Quantity']);
         //focus.attr("transform", "translate(" + x(d.Date) + "," + (500 - margin.top - margin.bottom)*depl/100+ ")");
-        focus.select("text").text( opt.value + " days quantity " + Math.round((depl-dep0)*100/dep0, 1) + "%" + " Current Quantity - "+ depl + " Previous Quantity - " + dep0 + " Current day -"+ d1.Date.getDay() +"/" + (d1.Date.getMonth()+1) +"/"+d1.Date.getFullYear() );
+        focus.select("text").text( opt.value + " days quantity " + Math.round((depl-dep0)*100/dep0, 1) + "%" + " Current Quantity - "+ depl + " Previous Quantity - " + dep0 + " Current day -"+ (d1.Date.getDay()+1) +"/" + d1.Date.getMonth() +"/"+d1.Date.getFullYear() );
   }
 
   focus.append("g")
