@@ -170,7 +170,7 @@ d3.csv("furniture.csv", type, function(error, data) {
     d= x0 - d0.Date > d1.Date - x0 ? d1 : d0;
         var depl=parseFloat(d['Quantity']);
         var dep0=parseFloat(d0['Quantity']);
-        focus.select("text").text( opt.value + " days quantity " + " Current Quantity - "+ depl + " Previous Quantity - " + dep0 + " Selected date -"+ d1.Date);
+        focus.select("text").text( opt.value + " days quantity " + " Current Quantity - "+ depl + " Previous Quantity - " + dep0 + " Selected date -"+ parseDate(d1.Date);
   }
 
   focus.append("g")
