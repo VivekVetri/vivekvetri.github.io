@@ -30,18 +30,28 @@ div.scrollmenu a:hover {
   </div>
     <h1>D3 Narrative Visualization Project</h1>
 		<div>
-		<p>This narrative visualization story uses Super Store dataset.
-		I have tried the drill down hybrid structure for this vizualization.</p>
-		<p>This vizualization has three scenes in the narrative story.
+			<h4>Messaging</h4>
+		<p>This narrative visualization story uses Super Store dataset to show the profit over period of time under different categories - Furniture, Office Supplies and Technology. This will help the store to keep up the sales in the profitable category and improve sales in categories with low sales in a certain period of time. </p>
+			<h4>Narrative Structure</h4>
+		I have tried the drill down structure for this vizualization.
+		This vizualization has three scenes in the narrative story. Each scene helps in understanding the trend in profit for that category and users can drill-down each one to see the profit trend over different period of time.
 </p>
+			<h4>Visual Structure</h4><p>Each scene has a Range selector to select the time range - Daily, Weekly, Monthly. In order to keep the user informed and stay focused, I have created a Mouse over text that will help them understand the profit increase/decline in that category with exact date selected. Users can transition to other scenes by simply clicking on corresponding tabs. This is a very simplistic approach. 
+</p>
+<h4>Scenes</h4>
 <ul>
 	<li>Scene 1 shows the Quantity of orders made under <b>Furniture</b> category</li>
 	<li>Scene 2 shows the Quantity of orders made under <b>Office Supplies</b> category</li>
 	<li>Scene 3 shows the Quantity of orders made under <b>Technology</b> category</li>
 </ul>
-<p> Quantity of each Category over Days, Weeks, Months explained using d3. It helps in understanding which category has sold the most quantity.
-This will help the store to keep up the sales in the profitable category and improve sales in categories with low sales. 
-</p>
+<div>
+		<h4>Annotations</h4>
+		<ul>
+			<li><b>Tool Tip</b> - This tooltip shows quantity where the mouse pointer is.
+			<li><b>Axis Labels</b> - Annotates what is the x-axis and y-axis for the chart.
+		</ul>
+	</div>
+
 	</div>
 	<div>
 		<h4>Parameters</h4>
@@ -50,6 +60,14 @@ This will help the store to keep up the sales in the profitable category and imp
 			<li><b>Range for quantity</b> - Option to choose various range to see the quantity sold.
 			<li><b>Quantity</b> - Quantity sold for a given category and a selected date range.
 			</ul>
+	</div>
+	
+	<div>
+		<h4>Triggers</h4>
+		<ul>
+			<li><b>Zoom & Brush Trigger</b> - Mouse drag inside the chart or adjusting the date filter boundary in context filter will fire this trigger.
+			<li><b>On mouse over Trigger</b> - This trigger will show the tooltip data on mouse over.
+		</ul>
 	</div>
 	<div>
 		<h4>Events</h4>
@@ -61,33 +79,13 @@ This will help the store to keep up the sales in the profitable category and imp
 		</ul>
 	</div>
 	<div>
-		<h4>Triggers</h4>
-		<ul>
-			<li><b>Zoom & Brush Trigger</b> - Mouse drag inside the chart or adjusting the date filter boundary in context filter will fire this trigger.
-			<li><b>On mouse over Trigger</b> - This trigger will show the tooltip data on mouse over.
-		</ul>
-	</div>
-	<div>
-		<h4>Annotations</h4>
-		<ul>
-			<li><b>Tool Tip</b> - This tooltip shows quantity where the mouse pointer is.
-			<li><b>Axis Labels</b> - Annotates what is the x-axis and y-axis for the chart.
-		</ul>
-	</div>
-	<div>
 		<h4>Drill Down </h4>
 		<ul>
 			<li> This story uses zoom out and zoom in feature of D3 to drill down the data. </li>
 		</ul>
 	</div>
 	<div>
-		<h4>Future Improvements</h4>
-		<ul>
-			<li> I would like to further drill down and view the sub-categories as well.</li>
-		</ul>
-	</div>
-	<div>
-		<h4>Deployment</h4>
+		<h4>Deployment Details</h4>
 		<ul>
 			<li> This project is hosted in github.io</li>
 		</ul>
